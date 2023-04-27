@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+# Getting Started with Create React App [![pages-build-deployment](https://github.com/Ajay-Dhangar/functional-class-component/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/Ajay-Dhangar/functional-class-component/actions/workflows/pages/pages-build-deployment)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
