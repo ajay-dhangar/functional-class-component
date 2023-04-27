@@ -1,0 +1,15 @@
+#classComponentBtn{
+    margin-top: 50px;
+    border-radius: 30px;
+    width: auto;
+    font-size: 16px;
+    padding: 20px;
+}
+#classComponentContent{
+   margin-top: 120px;
+   border: 3px solid #000;
+   padding: 30px;
+   border-radius: 30px;
+   background-color: rgb(199, 135, 171);
+   display: none;
+}
