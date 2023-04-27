@@ -1,10 +1,9 @@
 import React from 'react';
 import './classComponent.css'
 class ClassComponent extends React.Component {
-  handleClick = () =>{
-    
-      document.getElementById("classComponentContent").style.display="block";
-      
+  handleClick = () =>{    
+    const classComponentContent = document.getElementById("classComponentContent");
+    classComponentContent.style.display = classComponentContent.style.display === 'none' ? 'block' : 'none';      
   }
   render() {
     return (

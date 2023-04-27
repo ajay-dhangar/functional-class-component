@@ -9,6 +9,7 @@
   gap: 100px;
   justify-content: center;
 }
-body{
-  background-color:rgb(185, 185, 185);
-}
+body{  
+  background: #ccc6c7;
+
+  }

@@ -2,7 +2,8 @@ import React from 'react'
 import './functionComponent.css'
 function FunctionComponent() {
   function handleClick() {
-    document.getElementById("functionComponentContent").style.display="block"
+    const functionComponentContent = document.getElementById("functionComponentContent");
+    functionComponentContent.style.display = functionComponentContent.style.display === 'none' ? 'block' : 'none';  
   }
   
   return (
