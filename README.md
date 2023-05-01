@@ -140,7 +140,7 @@ background: linear-gradient(0deg, rgba(55,177,179,1) 1%, rgba(209,191,191,1) 7%,
 }
 ```
 
-4. Now, you write code in `index.js` file of `component`
+**Now, you write code in `index.js` file of `component`**
 
 ```js
 export { default as ClassComponent} from "./ClassComponent"
