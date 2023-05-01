@@ -1,70 +1,178 @@
-# Getting Started with Create React App [![pages-build-deployment](https://github.com/Ajay-Dhangar/functional-class-component/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/Ajay-Dhangar/functional-class-component/actions/workflows/pages/pages-build-deployment)
+# Getting Started with Create React App for Functional and Class components 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[![pages-build-deployment](https://github.com/Ajay-Dhangar/functional-class-component/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/Ajay-Dhangar/functional-class-component/actions/workflows/pages/pages-build-deployment)
 
-## Available Scripts
+## Demo (Click on Image for view project)
 
-In the project directory, you can run:
+<a href="https://ajay-dhangar.github.io/functional-class-component/"><img src="https://user-images.githubusercontent.com/99037494/235401143-5aeead61-3ae3-42c2-a982-34c98a81b61f.png" alt="dfunctional and class component" width="80%" /></a>
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Now, How To make it?
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### **Step 1:** Set up your development environment
 
-### `npm test`
+To get started, you'll need to set up your development environment. 
+This includes installing Node.js, a package manager like npm or Yarn, and a code editor like Visual Studio Code.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Step 2: Create a new React project
 
-### `npm run build`
+Once you have your development environment set up, you can create a new React project using the create-react-app command. Open up your terminal or command prompt and run the following command:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```arduino
+npx create-react-app functional-class-component
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+This will create a new React project with the name "functional-class-component" in your current directory.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Step 3: Install dependencies
 
-### `npm run eject`
+Now that you have a new React project, you'll need to install the necessary dependencies for your app. Navigate to the project directory and run the following command:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```pwsh
+npm install axios react-router-dom
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+This will install Axios and React Router Dom, which are the two dependencies your app will use.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Step 4: Create your components
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+With your dependencies installed, you can start creating your components. In this app, you'll create two components: a functional component and a class component.
 
-## Learn More
+1. First, create a new file called `FunctionalComponent.jsx`, `functionalComponent.css` in the `src` directory. Next, create a new file called `ClassComponent.jsx`, `classComponent.css` in the "src" directory.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+![image](https://user-images.githubusercontent.com/99037494/235404113-b3a390ae-8aba-4191-a1e5-7453ab17fd95.png)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+2. This will be your functional component. In the file, add the following code:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+For `FunctionalComponent.jsx`:
 
-### Analyzing the Bundle Size
+```js
+import React from 'react'
+import './functionComponent.css'
+function FunctionComponent() {
+  function handleClick() {
+    const functionComponentContent = document.getElementById("functionComponentContent");
+    functionComponentContent.style.display = functionComponentContent.style.display === 'none' ? 'block' : 'none';  
+  }
+  
+  return (
+    <div>
+        <button id='functionalComponentBtn' onClick={handleClick}>To see styling in functional component</button>
+       <div id='functionComponentContent'>
+           <h2>This is Created Using Functional component</h2>
+           <p>This is done using external CSS</p>
+           <p style={{color:'blue'}}>This is done using inline CSS</p>
+       </div>
+    </div>
+  )
+}
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+export default FunctionComponent
+```
 
-### Making a Progressive Web App
+For `functionalComponent.css`:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+```css
+#functionalComponentBtn{
+    border-radius: 30px;
+    width: auto;    
+    padding: 20px;
+    font-size: 16px;
+    margin-top: 50px;
+}
+#functionComponentContent{
+    margin-top: 120px;
+    border: 3px solid #000;
+    padding: 30px;
+    border-radius: 30px;
+    background-color: aqua;
+    display: none;
+ }
+```
 
-### Advanced Configuration
+3. Next This will be your class component. In the file, add the following code:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+For `ClassComponent.jsx` :
 
-### Deployment
+```js
+import React from 'react';
+import './classComponent.css'
+class ClassComponent extends React.Component {
+  handleClick = () =>{    
+    const classComponentContent = document.getElementById("classComponentContent");
+    classComponentContent.style.display = classComponentContent.style.display === 'none' ? 'block' : 'none';      
+  }
+  render() {
+    return (
+      <div>
+        <button id='classComponentBtn' onClick={this.handleClick}>To see styling in Class component</button>
+        <div id='classComponentContent'><h2>This is Created Using Functional component</h2>
+           <p>This is done using external CSS</p>
+           <p style={{color:'blue'}}>This is done using inline CSS</p>
+        </div>
+      </div>
+    );
+  }
+}
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+export default ClassComponent;
+```
 
-### `npm run build` fails to minify
+For `classComponent.css` :
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```css
+#classComponentBtn{
+    margin-top: 50px;
+    border-radius: 30px;
+    width: auto;
+    font-size: 16px;
+    padding: 20px;
+}
+#classComponentContent{
+   margin-top: 120px;
+   border: 3px solid #000;
+   padding: 30px;
+   border-radius: 30px;
+   background: rgb(55,177,179);
+background: linear-gradient(0deg, rgba(55,177,179,1) 1%, rgba(209,191,191,1) 7%, rgba(198,71,104,0.9472163865546218) 52%, rgb(241, 80, 112) 85%);
+   display: none;
+}
+```
+
+4. Now, you write code in `index.js` file of `component`
+
+```js
+export { default as ClassComponent} from "./ClassComponent"
+export { default as FunctionComponent} from "./FunctionComponent"
+```
+
+### Step 5: Now, update `App.js` file
+
+```js
+import React from 'react';
+import './App.css'
+import {FunctionComponent, ClassComponent}  from "./components";
+
+function App() {
+  return (
+    <div className="App">
+      <h1>Styling using Functional and Class components</h1>
+      <div className='btns'>
+        <FunctionComponent name="John"/>
+        <ClassComponent />        
+        </div>
+    </div>
+  );
+}
+
+export default App;
+```
+
+### Step 6: Write a command for start your React App
+
+```pwsh
+npm start
+```
+
+Open http://localhost:3000 to view it in your browser.
