@@ -38,7 +38,7 @@ This will install Axios and React Router Dom, which are the two dependencies you
 
 With your dependencies installed, you can start creating your components. In this app, you'll create two components: a functional component and a class component.
 
-1. First, create a new file called `FunctionalComponent.jsx`, `functionalComponent.css` in the `src` directory. Next, create a new file called `ClassComponent.jsx`, `classComponent.css` in the "src" directory.
+1. First, create a new file called `FunctionalComponent.jsx`, `functionalComponent.css` in the `src` directory. Next, create a new file called `ClassComponent.jsx`, `classComponent.css` and `index.js` in the `src` directory.
 
 ![image](https://user-images.githubusercontent.com/99037494/235404113-b3a390ae-8aba-4191-a1e5-7453ab17fd95.png)
 
@@ -159,7 +159,7 @@ function App() {
     <div className="App">
       <h1>Styling using Functional and Class components</h1>
       <div className='btns'>
-        <FunctionComponent name="John"/>
+        <FunctionComponent />
         <ClassComponent />        
         </div>
     </div>
