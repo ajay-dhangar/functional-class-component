@@ -3,7 +3,7 @@ import './classComponent.css'
 class ClassComponent extends React.Component {
   handleClick = () =>{    
     const classComponentContent = document.getElementById("classComponentContent");
-    classComponentContent.style.display = classComponentContent.style.display === 'none' ? 'block' : 'none';      
+    classComponentContent.style.display = classComponentContent.style.display === 'block' ? 'none' : 'block';      
   }
   render() {
     return (

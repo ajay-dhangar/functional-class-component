@@ -3,7 +3,7 @@ import './functionComponent.css'
 function FunctionComponent() {
   function handleClick() {
     const functionComponentContent = document.getElementById("functionComponentContent");
-    functionComponentContent.style.display = functionComponentContent.style.display === 'none' ? 'block' : 'none';  
+    functionComponentContent.style.display = functionComponentContent.style.display === 'block' ? 'none' : 'block';  
   }
   
   return (

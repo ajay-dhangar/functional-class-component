@@ -1,6 +1,7 @@
+import React from 'react';
 import './App.css'
-import ClassComponent  from "./components/ClassComponent";
-import FunctionComponent  from "./components/FunctionComponent";
+import {FunctionComponent, ClassComponent}  from "./components";
+
 function App() {
   return (
     <div className="App">
